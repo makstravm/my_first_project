@@ -1,0 +1,398 @@
+body{
+   background-color: #eaeaea;
+   font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+   padding-left: 15px;
+   padding-right: 15px;
+   max-width: 1170px;
+   margin: 0 auto;
+   position: relative;
+}
+.center {
+   text-align: center;
+}
+/*****************************************
+**************HEADER**********************
+*****************************************/
+header > .wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 36px;
+   padding-bottom: 40px;
+}
+.nav {
+   display: flex;
+   list-style-type: none;
+   padding-left: 0;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 0;
+
+/*****************************************
+**************menu**********************
+*****************************************/
+   margin-top: 0;
+}
+.nav > li {
+   padding-left: 24px;
+   margin-left: 23px;
+   position: relative;
+}
+.nav>li:first-child {
+   padding-left: 0;
+   margin-left: 0;
+}
+.nav> li::before {
+   content: "";
+   display: block;
+   width: 2px ;
+   height: 100%;
+   background-color: #949494;
+   position: absolute;
+   left:0;
+}
+.nav > li:first-child::before {
+   display: none;
+}
+.nav > li > a {
+   text-decoration: none;
+   color: #494949;   
+   border-radius: 10px;
+   padding: 5px;
+}
+.nav > li > a:hover{
+   
+   box-shadow: 0 10px 5px 2px #494949, inset 0 0 5px 2px;
+}
+/*****************************************
+**************BANNER**********************
+*****************************************/
+.banner {
+   background-image: url(../imeges/banner.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   color: #fff;
+   padding-top: 212px;
+   padding-bottom: 285px;
+}
+.pizza {
+   position: absolute;
+   right: -15px;
+   top: 0;
+   margin-top: -197px;
+}
+.title {
+   font-size: 50px;
+   margin-bottom: 12px;
+   letter-spacing: -0.8px;
+}
+.description {
+   font-size: 25px;
+   line-height: 30px;
+   max-width: 570px;
+   font-family:'Roboto', sans-serif;
+   margin-bottom: 24px;
+   margin-top: 0;
+   letter-spacing: 0.5px;
+}
+.btn {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   border: 2px solid #fff;
+   padding: 12px 0px;
+   max-width: 188px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+.btn:hover {
+   box-shadow: 0px 0px 3px 2px rgb(253, 245, 245);
+   text-shadow: 0 0 5px #282828;
+}
+/*****************************************
+**************BANNER 2**********************
+*****************************************/
+.h2{
+   font-size: 45px;
+   color: #282828;
+   text-transform: uppercase;
+   font-weight: 700;
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   padding-right: 127px;
+   padding-left: 110px;
+   margin-bottom: 12px;
+}
+.h2::before,.h2::after{
+   content: '';
+   background-image: url(../imeges/item.png);
+   position: absolute;
+   display: block;
+   width: 102px;
+   height: 28px;
+   top: calc(50% - 14px);
+}
+.h2::before {
+   left: 0;
+}
+.h2::after{
+   right: 0;
+}
+.h2 + p {
+   color: #959595;
+   font-size: 20px;
+   font-family:'Roboto', sans-serif;
+   margin: 0;
+}
+/*****************************************
+**************MENU 2**********************
+*****************************************/
+.menu{
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   padding-left: 0;
+   margin-top: 39px;
+   margin-bottom: 0;
+}
+.menu > li {
+   padding-left: 20px;
+   padding-right: 20px;
+   position: relative;
+   margin-bottom: 66px;
+
+}
+.menu> li::before {
+   content: "";
+   display: block;
+   width: 2px ;
+   height: 100%;
+   background-color: #949494;
+   position: absolute;
+   left:0;
+}
+.menu > li:first-child::before {
+   display: none;
+}
+.menu > li  > a {
+   text-decoration: none;
+   color: #494848;
+   font-size: 18px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding-bottom: 18px;
+} 
+.menu > li  > a:hover {
+   border-bottom: 4px solid #ee252d;
+   position: relative;
+}
+.menu > li  > a:hover::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   right: 0;
+   display: block;
+   width: 0;
+   height: 0;
+   bottom: 0;
+   margin: 0 auto;
+   border: 7px solid transparent;
+   border-bottom: 7px solid #ee252d;
+}
+/*****************************************
+**************BOX**********************
+*****************************************/
+.box {
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+   margin-bottom: 102px;
+}
+.box-item{
+   box-sizing: content-box;
+   padding: 50px 0 0px 45px;
+}
+.number {
+   font-family: 'Roboto', sans-serif;
+   font-size: 120px;
+   font-weight: 900; 
+   margin: 0;
+   display: inline-block;
+   position: relative;
+   max-width: 262px;
+   color: #282828;
+}
+.number-one::after{
+   content:'';
+   position: absolute;
+   background-image: url(../imeges/item01.png);
+   width: 126px;
+   height: 71px;
+   background-repeat: no-repeat;
+   left: 69px;
+   top: calc(50% - 35px);
+
+}
+.number-two::after{
+   content:'';
+   position: absolute;
+   background-image: url(../imeges/item02.png);
+   width: 184px;
+   height: 81px;
+   background-repeat: no-repeat;
+   left: 88px; 
+   top: calc(50% - 40px);
+
+}
+.number-three::after{
+   content:'';
+   position: absolute;
+   background-image: url(../imeges/item03.png);
+   width: 142px;
+   height: 68px;
+   background-repeat: no-repeat;
+   left: 94px;
+   top: calc(50% - 34px);
+
+}
+.box-text{
+   display: block;
+   position: relative;
+   padding-right: 55px;
+   padding-bottom: 40px;
+   border-right: 2px solid  #eaeaea;
+}
+.box-item:last-child .box-text{ 
+   border-right:none
+}
+.box-text > h3 {
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 45px;
+   margin: 18px 0px 11px 6px;
+   padding: 0px;
+   color: #282828;
+}
+.box-text > p {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+   color: #282828;
+   margin-top: 0px;
+   padding-left: 10px;
+   letter-spacing: 1.0px;
+}
+/*****************************************
+**************BTN-start**********************
+*****************************************/
+.btn-start {
+   color: #fff;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-weight: 700;
+   background-image: url(../imeges/bg.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   text-decoration: none;
+   padding: 29px 60px;
+}
+.btn-start:hover{
+   border-radius: 50px;
+   box-shadow: 0 0 30px 5px #e75459, 0 0 10px 25px #ee252d inset;
+   text-shadow: 0 0 5px #282828;
+}
+.page{
+   padding-bottom: 94px;
+   padding-top: 76px;
+}
+/*****************************************
+**************FOOTER*********************
+*****************************************/
+.footer{
+   background-image: url(../imeges/footer.png);
+   padding: 24px 0;
+   color: #eaeaea;
+   text-transform: uppercase;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   text-align: center;
+   padding-top: 23px;
+   margin-top: 11px;
+}
+/*****************************************
+**************Adaptiv*********************
+*****************************************/
+@media (max-width: 1100px){
+   .wrapper{
+      max-width: 800px;
+   }
+   .pizza{
+      display: none;
+   }
+   .banner{
+      padding-top: 76px;
+      padding-bottom: 100px;
+   }
+   .h2, .box-text>h3{
+      font-size: 35px;
+   }
+   .h2 + p{
+      font-size: 18px;
+   }
+   .menu > li {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+   .box {
+      flex-direction: column;
+   }
+   .box-item {
+      box-sizing: content-box;
+      padding: 30px 45px 11px 45px;
+   }
+   .box-text {
+      padding-right: 55px;
+      padding-bottom: 25px;
+   }
+   .box-text{
+      padding-right: 0px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid  #eaeaea;
+      border-right: none;
+   }
+   .box-item:last-child .box-text{ 
+      border-bottom:none
+}
+@media (max-width: 800px) {}
+   header > .wrapper {
+      flex-direction: column;
+   }
+   .nav {
+      margin-top: 23px;
+   }
+   .h2::before, .h2::after{
+      display: none;
+   }
+   .banner{
+      padding-left: 20px;
+   }
+   .btn-start{
+      font-size: calc(1vw + 1em);
+      background-size: contain;
+   }a
+   .footer{
+      padding: 13px 0;   
+      font-size: calc(1vw + 0.5em);
+   }
+   .page {
+      padding-bottom: 40px;
+      padding-top: 63px;
+   }
+}

@@ -66,6 +66,32 @@ header > .wrapper{
    
    box-shadow: 0 10px 5px 2px #494949, inset 0 0 5px 2px;
 }
+@media screen and (max-width:700px) {
+   .nav li {
+      font-size: 10px;
+      text-align: left;
+   }
+}
+
+@media screen and (max-width:500px)  {
+   .nav {
+      flex-direction: column;
+      width: 100%;
+   }
+   .nav li::before {
+      display: none;
+   }
+   .nav li {
+      font-size: 8px;
+      margin: 0%;
+      padding-left: 0%;
+      margin-left: 0%;
+      margin-bottom: 3%;
+      }
+   .wrapper {
+      padding: 0%;
+   }
+}
 /*****************************************
 **************BANNER**********************
 *****************************************/
@@ -205,6 +231,29 @@ header > .wrapper{
    border: 7px solid transparent;
    border-bottom: 7px solid #ee252d;
 }
+@media screen and (max-width:700px) {
+   .menu li  a {
+      font-size: 10px;
+   }
+   .h2 {
+      padding: 0%;
+   }
+}
+@media screen and (max-width:500px) {
+   .menu {
+      flex-direction: column;
+      margin-bottom: 5%;
+   }
+   .menu li {
+      margin: 2%;
+   }
+   .menu li a {
+   font-size: 8px;
+   }
+   .menu li::before {
+      display: none;
+   }
+}
 /*****************************************
 **************BOX**********************
 *****************************************/
@@ -311,6 +360,12 @@ header > .wrapper{
 .page{
    padding-bottom: 94px;
    padding-top: 76px;
+}
+@media screen and (max-width:500px) {
+   .btn-start {
+      font-size: 20px;
+      padding: 10%;
+   }
 }
 /*****************************************
 **************FOOTER*********************

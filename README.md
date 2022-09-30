@@ -1,12 +1,8 @@
 # my_first_project :love_letter:
 just another repositoty
 ```javascript
-function test() {
-    console.log("notice the blank line before this function?");
-}
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID = 1052464195614
 ```
 ```html
-function test() {
-    console.log("notice the blank line before this function?");
-}
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID = 1052464195614
 ```
